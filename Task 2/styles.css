@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('images/drum\ kit\ background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.drum-kit {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.drum {
+    padding: 20px;
+    font-size: 20px;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+
+}
+
+.drum:hover {
+    background-color: #21a1f1;
+    box-shadow: 0 0 10px 5px rgba(224, 195, 34, 0.863);
+    /* Golden outline effect */
+}
+
+.key {
+    font-size: 14px;
+    margin-left: 10px;
+    /* Space between the button text and the key */
+    color: #ffffff;
+    /* Change color as needed */
+}
